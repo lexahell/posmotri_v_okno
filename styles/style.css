@@ -85,6 +85,7 @@ html {
   display: flex;
   inline-size: fit-content;
   cursor: pointer;
+  align-items: center;
 }
 
 .visually-hidden {
@@ -102,8 +103,8 @@ html {
   border-block-start: 1px solid #ffffff;
   border-block-end: 1px solid #ffffff;
   padding: 0;
-  color: rgba(255, 255, 255, 0.7);
-  font-family: 'Fira Sans Condensed';
+  color: #ffffff;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   line-height: 1.2;
   background-color: inherit;
@@ -115,6 +116,10 @@ html {
 .search-form__textfield::placeholder {
   color: rgba(255, 255, 255, 0.7);
   line-height: 1.2;
+}
+
+.search-form__textfield:focus {
+  outline: none;
 }
 
 .search-form__label:has(:focus-visible) {
@@ -158,9 +163,9 @@ html {
 }
 
 .button {
-  border: 1px solid #ffffff;
+  border: 1px solid currentColor;
   color: #ffffff;
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 700;
   font-size: 18px;
   text-align: center;
@@ -219,7 +224,6 @@ html {
 }
 
 .content__list-item {
-  min-block-size: 107px;
   inline-size: 398px;
 }
 
@@ -274,7 +278,7 @@ html {
   margin-block-start: 3px;
   margin-block-end: 8px;
   overflow: hidden;
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 100%;
