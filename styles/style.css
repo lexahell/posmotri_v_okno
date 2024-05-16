@@ -45,19 +45,24 @@ html {
   align-items: end;
   gap: 28px;
   padding-inline: 30px;
+  -webkit-padding-before: 135px;
   padding-block-start: 135px;
+  -webkit-padding-after: 133px;
   padding-block-end: 133px;
 }
 
 .result__video-container {
   position: relative;
+  -webkit-margin-after: 16px;
   margin-block-end: 16px;
   block-size: 386px;
   inline-size: 711px;
 }
 
 .result__video {
+  -o-object-fit: cover;
   object-fit: cover;
+  -o-object-position: center;
   object-position: center;
   inline-size: 100%;
   block-size: 100%;
@@ -74,6 +79,7 @@ html {
 }
 
 .search-form__fieldset-title {
+  -webkit-margin-after: 5px;
   margin-block-end: 5px;
   color: #ffffff;
   font-weight: 400;
@@ -83,6 +89,8 @@ html {
 
 .search-form__label {
   display: flex;
+  inline-size: -webkit-fit-content;
+  inline-size: -moz-fit-content;
   inline-size: fit-content;
   cursor: pointer;
   align-items: center;
@@ -94,13 +102,16 @@ html {
   clip: rect(0 0 0 0);
   inline-size: 1px;
   block-size: 1px;
+  -webkit-clip-path: inset(50%);
   clip-path: inset(50%);
   white-space: nowrap;
 }
 
 .search-form__textfield {
   border: none;
+  -webkit-border-before: 1px solid #ffffff;
   border-block-start: 1px solid #ffffff;
+  -webkit-border-after: 1px solid #ffffff;
   border-block-end: 1px solid #ffffff;
   padding: 0;
   color: #ffffff;
@@ -108,9 +119,31 @@ html {
   font-size: 18px;
   line-height: 1.2;
   background-color: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   inline-size: 225px;
   block-size: 27px;
+}
+
+.search-form__textfield::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.2;
+}
+
+.search-form__textfield::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.2;
+}
+
+.search-form__textfield:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.2;
+}
+
+.search-form__textfield::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.2;
 }
 
 .search-form__textfield::placeholder {
@@ -146,6 +179,7 @@ html {
   align-self: center;
   block-size: 19px;
   inline-size: 19px;
+  -webkit-margin-end: 5px;
   margin-inline-end: 5px;
   border: 1px solid #ffffff;
   padding: 2px;
@@ -204,8 +238,9 @@ html {
 }
 
 .title {
+  -webkit-margin-start: 2px;
   margin-inline-start: 2px;
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
@@ -218,6 +253,7 @@ html {
 
 .content__list {
   position: relative;
+  -webkit-padding-end: 20px;
   padding-inline-end: 20px;
   overflow: auto;
   block-size: 298px;
@@ -228,11 +264,13 @@ html {
 }
 
 .content__list-item:not(:last-of-type) {
+  -webkit-margin-after: 30px;
   margin-block-end: 30px;
 }
 
 .content__card-link {
   display: block;
+  -webkit-margin-start: 2px;
   margin-inline-start: 2px;
   color: #ffffff;
   text-decoration: none;
@@ -262,8 +300,11 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: start;
+  -webkit-padding-start: 2px;
   padding-inline-start: 2px;
+  -webkit-padding-before: 2px;
   padding-block-start: 2px;
+  -webkit-padding-after: 2px;
   padding-block-end: 2px;
 }
 
@@ -274,8 +315,11 @@ html {
 }
 
 .content__video-card-title {
+  -webkit-margin-end: 10px;
   margin-inline-end: 10px;
+  -webkit-margin-before: 3px;
   margin-block-start: 3px;
+  -webkit-margin-after: 8px;
   margin-block-end: 8px;
   overflow: hidden;
   font-family: 'Oswald', sans-serif;
@@ -293,7 +337,9 @@ html {
 }
 
 .content__video-card-thumbnail {
+  -o-object-fit: cover;
   object-fit: cover;
+  -o-object-position: center;
   object-position: center;
   block-size: 103px;
   inline-size: 194px;
